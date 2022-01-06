@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap');
+.div11{
+    margin-top: 35vh;
+    display: flex;
+    
+    
+}
+
+h1{
+    
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    z-index: 4;
+    right: 400px;
+    letter-spacing: .15em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    transform: translateY(0);
+    animation: flutuar 4s ease infinite;
+}
+@keyframes flutuar{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(30px);}
+    100%{transform: translateY(0);}
+    
+}
+
+
+div{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border: 4px solid transparent;
+    border-top: 4px solid #ffff00;
+    border-radius: 50%;
+    
+    position: relative;
+   
+}
+
+
+.div1{
+    left: 370px;
+    animation: rodar 4s linear infinite;
+    border-top: 4px solid #0066ff;
+    
+}
+.div1::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #0066ff;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 5px #4d94ff, 0 0 0 10px #99c2ff;
+    
+}
+@keyframes rodar{
+   0% {transform: rotate(0deg);}
+
+   100% {transform: rotate(360deg);}
+}
+
+
+.div2{
+    top: -50px;
+    animation: rodar2 4s linear infinite;
+    border-top: 4px solid #00cc00;
+}
+.div2::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #00cc00;
+    left: 15px;
+    top: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 5px #1aff1a, 0 0 0 10px #66ff66;
+    
+}
+@keyframes rodar2{
+    0% {transform: rotate(0deg);}
+ 
+    100% {transform: rotate(-360deg);}
+ }
+.div3{
+    right: 370px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid #cc0000;
+    animation: rodar3 4s linear infinite;
+}
+.div3::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #cc0000;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 5px #ff1a1a, 0 0 0 10px #ff6666;
+    
+}
+@keyframes rodar3{
+    0% {transform: rotate(0deg);}
+ 
+    100% {transform: rotate(-360deg);}
+ }
+
+
+
+body{
+    background-color: black;
+}
